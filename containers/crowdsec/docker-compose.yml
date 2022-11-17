@@ -8,9 +8,9 @@ services:
             - 6060:6060
         image: crowdsecurity/crowdsec:latest-debian
         environment:
-            - TZ=Europe/Brussels        
+            - TZ=Europe/Brussels
         volumes:
-            - ./crowdsec_config:/etc/crowdsec          
+            - ./crowdsec_config:/etc/crowdsec
             - ./crowdsec_data:/var/lib/crowdsec/data
         restart: unless-stopped
 
